@@ -1,162 +1,258 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design-text 1</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RouteX Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="navebar">
-       
-        <div class="logo"> 
-            <img src="images/logo.png" alt="RouteX Logo"> 
-            <h3>RouteX</h3>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a><ion-icon name="chevron-down-outline"></ion-icon></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li>STORY<ion-icon name="chevron-down-outline"></ion-icon></li>
-                <li>VISA<ion-icon name="chevron-down-outline"></ion-icon></li>
-                <li>BLOG<ion-icon name="chevron-down-outline"></ion-icon></li>
-                <li>PAGE<ion-icon name="chevron-down-outline"></ion-icon></li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-        <div class="help">
-            <div class="help-icon">
-                <ion-icon name="chatbubbles-outline"></ion-icon>
+    
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <img src="images/logo.png" alt="RouteX Logo" width="60" height="60" class="me-2">
+        <a class="navbar-brand fw-bold text-success" href="#">RouteX</a>
+
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#home" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">STORY</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Story 1</a></li>
+                            <li><a class="dropdown-item" href="#">Story 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">VISA</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Visa Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Visa Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">BLOG</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Blog Post 1</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAGE</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                     <div class="chat-icon-wrapper">
+    <i class="bi bi-chat-left-text text-success fs-3 chat-icon-back"></i>
+    <i class="bi bi-chat-left-text fs-3 text-success chat-icon-front"></i>
+  </div>
+
+                    <div>
+                        <p class="mb-0">Need help?</p>
+                        <p class="mb-0 fw-bold text-success">(307) 555-0133</p>
+                    </div>
+                </div>
             </div>
-            <div class="help-no">
-            <p>Need help? <br> <strong>(307)555-0133</strong></p>
-            
-            </div>
-        </div>
-    </header>
-    <section class="section-1">
-        <div class="section-1-content">
-            <h1>Journey With Confidence <br> <span>Migrate</span> with Us</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>maxime est excepturi beatae exercitationem,nemo quisquam ut.</p>
-            <button class="btn">Learn More <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
-        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Journey with Confidence <br><span>Migrate</span> with Us</h1>
+        <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.</p>
+        <a href="#" class="btn btn-success btn-lg">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about-section" id="about">
+        <div class="about-left">
+            <div class="img-layout">
+                <img src="images/visa 1.jpg"  class="img img1"alt="Woman on call">
+                <img src="images/visa 2.jpg" class="img img2" alt="People in a meeting">
+                <img src="images/visa 3.jpg" class="img img3" alt="Smiling woman">
 
-       <div class="about-images">
-  <div class="img-container img1">
-    <img src="images/visa 1.jpg" alt="Support Staff" />
+            </div>
+            <div class="experience-box">
+                <h2>10+</h2>
+                <p>Years Of<br>Experience</p>
+            </div>
+        </div>
+
+    <!-- RIGHT text content -->
+    <div class="col-lg-6 about-right mt-5 mt-lg-0">
+      <h5>ABOUT US  <i class="bi bi-send"></i></h5>
+      <h2>Unknown Wanderlust<br>Your Journey into</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac ante sed tincidunt.</p>
+      <div class="features">
+        <div><i class="bi bi-file-check-fill" style="color: green;"></i><strong> Safety Guides</strong><br><span>Lorem ipsum dolor sit amet</span></div>
+        <div><i class="bi bi-file-check-fill" style="color: green;"></i><strong> Passport Assistance</strong><br><span>Lorem ipsum dolor sit amet</span></div>
+      </div>
+      <a href="#" class="btn-read">Read More <i class="bi bi-arrow-right"></i></a>
+    </div>
   </div>
-  <div class="img-container img2">
-    <img src="images/visa 2.jpg" alt="Passport Holder" />
+</section>
+
+    <!-- Services Section -->
+   <section class="our-services py-5">
+  <div class="container position-relative">
+    <div class="header mb-4">
+      <p class="small-title">OUR SERVICES  <i class="bi bi-send"></i></p>
+      <h1>Adventure Unleashed<br>Discover Your Next</h1>
+    </div>
+
+    <div class="row justify-content-center g-4 services">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="box">
+          <div class="icon"><i class="bi bi-globe-asia-australia"></i></div>
+          <h3>Food and Wine Tours</h3>
+          <p>Dolor sit amet,consectetur adipiscing elit.Send sit amet rcus nun Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed sit amet rcus nunc.Duis egestas ac</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="box">
+          <div class="icon"><i class="bi bi-airplane"></i></div>
+          <h3>Travel Opportunities</h3>
+          <p>Dolor sit amet,consectetur adipiscing elit.Send sit amet rcus nun Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed sit amet rcus nunc.Duis egestas ac</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="box">
+          <div class="icon"><i class="bi bi-rocket-takeoff"></i></div>
+          <h3>Solo Travel Planning</h3>
+          <p>Dolor sit amet,consectetur adipiscing elit.Send sit amet rcus nun Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed sit amet rcus nunc.Duis egestas ac</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="img-container img3">
-    <img src="images/visa 3.jpg" alt="Meeting" />
-  </div>
-  <div class="experience-box">
-    <h3>10+</h3>
-    <p><br><span>Years Of<br>Experience</span></p>
+</section>
+
+
+    <!-- Footer -->
+   <!-- footer -->
+
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row text-start">
+      
+      <!-- Logo and Description -->
+      <div class="col-md-3 mb-4">
+       
+        <h3> <img src="images/logo.png" alt="RouteX Logo" width="60" height="60" class="me-2"> RouteX</h3>
+        <p>Corporate business typically refers to large-scale mansolat enterprises or organizat</p>
+        <div class="social-icons mt-3">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-pinterest"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+      </div>
+      
+      <!-- Service Menu -->
+      <div class="col-md-3 mb-4">
+        <h5>Service Menu</h5>
+        <ul>
+          <li><i class="bi bi-check-lg"></i> Mistakes To Avoid</li>
+          <li><i class="bi bi-check-lg"></i> Your Startup</li>
+          <li><i class="bi bi-check-lg"></i> Knew About Fonts</li>
+          <li><i class="bi bi-check-lg"></i> Knew About Fonts</li>
+        </ul>
+      </div>
+
+      <!-- Useful Link -->
+      <div class="col-md-3 mb-4">
+        <h5>Useful Link</h5>
+        <ul>
+          <li><i class="bi bi-check-lg"></i> Latest News</li>
+          <li><i class="bi bi-check-lg"></i> Careers</li>
+          <li><i class="bi bi-check-lg"></i> General Inquiries</li>
+          <li><i class="bi bi-check-lg"></i>Case Studies</li>
+        </ul>
+      </div>
+
+      <!-- Gallery -->
+<div class="col-md-3 mb-4">
+  <h5 class="fw-bold mb-3">Gallery</h5>
+ <div class="row no-gutters gallery-row"><!-- small horizontal and vertical gaps -->
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 1.jpg" alt="Woman holding passport" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 2.jpg" alt="Hands of multiple people" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 3.jpg" alt="Woman holding a passport" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 2.jpg" alt="Smiling couple" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 1.jpg" alt="Woman taking a selfie" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-img-wrapper">
+        <img src="images/visa 3.jpg" alt="Close-up of hands" class="img-fluid">
+      </div>
+    </div>
   </div>
 </div>
-    <div class="about-text">
-    <div class="about-head">
-      <h4>About Us  <span><ion-icon name="paper-plane-outline"></ion-icon></span></h4>
-      </div>
-      <h2>Unknown Wanderlust <br />Your Journey into</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="main-content">
-    <div class="check-box">
-        <h5><ion-icon name="checkbox"></ion-icon>Safety Guides</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
-    </div>
-    <div class="check-box">
-        <h5><ion-icon name="checkbox"></ion-icon>Passport Assistance</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit.</p>
-    </div>
-    </div>
-      <a href="#" class="btn">Read More <span><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
-    </div>
-  </section>
 
-  <section class="services">
-    <h3>Our Services  <span><ion-icon name="paper-plane-outline"></ion-icon></span></h3>
-    <h2>Adventure Unleashed <br />Discover Your Next</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3><ion-icon name="earth-outline"></ion-icon></h3>
-        <h4>Food and Wine Tours</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam autem facilis voluptate ullam, aliquid suscipit et, delectus quod repellendus exercitationem soluta dolores odit perspiciatis consequatur obcaecati assumenda libero culpa ipsam!</p>
-      </div>
-      <div class="card">
-        <h3><ion-icon name="airplane"></ion-icon></h3>
-        <h4>Travel Opportunities</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, ut perspiciatis accusantium porro fuga laborum magnam placeat expedita voluptates reiciendis quisquam aut dolores consequatur explicabo tenetur, quidem, temporibus sit laboriosam.</p>
-      </div>
-      <div class="card">
-        <h3><ion-icon name="rocket-outline"></ion-icon></h3>
-        <h4>Solo Travel Planning</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga quas unde dolor rerum reiciendis consectetur alias! Maiores, aperiam ea minima, quo expedita autem, iure numquam quis quae delectus nobis!</p>
-      </div>
     </div>
-  </section>
+  </div>
 
+  <hr class="border-light">
+<div class="container-fluid d-flex justify-content-between align-items-center py-3 small text-white flex-wrap">
+  <div>
+    © RRDevs 2024 | All Rights Reserved
+  </div>
+  <div class="footer-links">
+    <a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
+    <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+    <a href="#" class="text-white text-decoration-none">Contact Us</a>
+  </div>
+</div>
+  
+</footer>
 
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-logo">
-        <div class="logo2"> 
-            <img src="images/logo.png" alt="RouteX Logo"> 
-            <h3>RouteX</h3>
-        </div>
-        <p>Corporate business typically refers to <br>large-scale enterprise or <br>organizations.</p>
-        <div class="socials">
-          <span><ion-icon name="logo-facebook"></ion-icon></span>
-          <span><ion-icon name="logo-instagram"></ion-icon></span>
-          <span><ion-icon name="logo-pinterest"></ion-icon></span>
-          <span><ion-icon name="logo-linkedin"></ion-icon></span>
-        </div>
-      </div>
-      <div class="service-menu">
-        <h4>Service Menu</h4>
-        <ul>
-          <li> <span><ion-icon name="checkmark-sharp"></ion-icon></span>Mistakes To Avoid</li>
-          <li> <span><ion-icon name="checkmark-sharp"></ion-icon></span>Your Startup</li>
-          <li> <span><ion-icon name="checkmark-sharp"></ion-icon></span>Know About Fonts</li>
-        </ul>
-      </div>
-      <div class="useful-links">
-        <h4>Useful Links</h4>
-        <ul>
-          <li><span><ion-icon name="chevron-forward-sharp"></ion-icon></span>Latest News</li>
-          <li><span><ion-icon name="chevron-forward-sharp"></ion-icon></span>Careers</li>
-          <li><span><ion-icon name="chevron-forward-sharp"></ion-icon></span>General Inquiries</li>
-          <li><span><ion-icon name="chevron-forward-sharp"></ion-icon></span>Case Studies</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Gallery</h4>
-        <div class="gallery">
-          <img src="images/visa 1.jpg" alt="1">
-          <img src="images/visa 2.jpg" alt="2">
-          <img src="images/visa 3.jpg" alt="3">
-          <img src="images/visa 1.jpg" alt="1">
-          <img src="images/visa 2.jpg" alt="2">
-          <img src="images/visa 3.jpg" alt="3">
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© RouteX 2024 | All Rights Reserved</p>
-      <div class="contactus">
-      <p><span>Terms & Conditions</span> <span> Privacy Policy</span><span>Contact Us</span></p>
-     
-      </div>
-      </div>
-    </div>
-  </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
